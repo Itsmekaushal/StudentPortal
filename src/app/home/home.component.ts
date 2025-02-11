@@ -17,10 +17,10 @@ export class HomeComponent {
 
   onProceed(): void {
     if (this.selectedRole === 'admin') {
-      // Redirect to login page with role=admin
+    
       this.router.navigate(['/login'], { queryParams: { role: 'admin' } });
     } else {
-      // Redirect to registration page with role=student
+
       this.router.navigate(['/register'], { queryParams: { role: 'student' } });
     }
   }
