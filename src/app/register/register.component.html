@@ -1,7 +1,7 @@
 <div class="card">
     <h2>Student Registration</h2>
   
-    <!-- Invalid Credential Message -->
+    
     <div class="error" *ngIf="errorMessage">{{ errorMessage }}</div>
   
     <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
@@ -28,7 +28,6 @@
             [(ngModel)]="user.lastName">
         </div>
         
-        <!-- Row 2: Date of Birth and Phone Number -->
         <div class="form-group">
           <label for="dob">Date of Birth</label>
           <input 
@@ -49,7 +48,7 @@
             [(ngModel)]="user.phone">
         </div>
         
-        <!-- Row 3: Email and Class -->
+        
         <div class="form-group full-row">
           <label for="email">Email</label>
           <input 
