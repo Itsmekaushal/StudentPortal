@@ -24,11 +24,11 @@ export class RegisterComponent {
       return;
     }
 
-    // Reset messages
+
     this.errorMessage = '';
     this.successMessage = '';
 
-    // Fetch existing users from users.json for duplicate check
+    
     this.http.get('/assets/users.json').subscribe((data: any) => {
       const users = data.users || [];
       const existingUser = users.find((u: any) => u.email === this.user.email);
@@ -39,7 +39,6 @@ export class RegisterComponent {
         this.successMessage = 'Registration Successful! Redirecting...';
         console.log('Registered User:', this.user);
 
-        // Redirect to login page after success
         setTimeout(() => {
           this.router.navigate(['/login']);
         }, 2000);
