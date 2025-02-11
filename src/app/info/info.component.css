@@ -1,0 +1,107 @@
+/* Main Card Styling */
+.info-card {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #ffffff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect for Card */
+  .info-card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Title Styling */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #007bff;
+  }
+  
+  /* Info Container */
+  .info-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  /* Each Item */
+  .info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Hover Effect */
+  .info-item:hover {
+    background: #e9ecef;
+  }
+  
+  /* Labels */
+  .label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #0056b3;
+  }
+  
+  /* Values */
+  .value {
+    font-style: normal;
+    font-size: 14px;
+    color: #222;
+  }
+  
+  /* Back Button */
+  .back-button {
+    margin-top: 20px;
+    padding: 12px 18px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    transition: 0.3s;
+  }
+  
+  /* Hover Effect for Button */
+  .back-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 3px 10px rgba(0, 91, 187, 0.4);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .info-card {
+      max-width: 90%;
+      padding: 20px;
+    }
+    
+    .info-item {
+      padding: 10px 12px;
+    }
+    
+    .back-button {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }
+  

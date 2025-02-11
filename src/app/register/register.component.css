@@ -1,0 +1,87 @@
+/* Card Container */
+.card {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* Heading */
+  h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Error Message */
+  .error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Grid Layout for Form Fields */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  /* Make full-width fields span both columns */
+  .full-row {
+    grid-column: 1 / -1;
+  }
+  
+  /* Form Group */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  /* Input Fields */
+  .form-group input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    transition: border-color 0.3s;
+  }
+  
+  /* Input Field Focus Effect */
+  .form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Submit Button */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  

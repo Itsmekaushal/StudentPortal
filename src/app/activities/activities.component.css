@@ -1,0 +1,40 @@
+.activities-card {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .activities-card h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+  }
+  .activities-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .activities-list li {
+    margin: 20px 0;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  .activities-list li:last-child {
+    border-bottom: none;
+  }
+  .icon {
+    font-size: 30px;
+    margin-right: 15px;
+    vertical-align: middle;
+  }
+  .activity-desc {
+    font-size: 14px;
+    color: #666;
+    margin-left: 45px;
+    margin-top: 5px;
+  }
+  

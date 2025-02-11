@@ -1,0 +1,78 @@
+<div class="card">
+    <h2>Student Registration</h2>
+  
+    <!-- Invalid Credential Message -->
+    <div class="error" *ngIf="errorMessage">{{ errorMessage }}</div>
+  
+    <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
+      <div class="grid-container">
+        <!-- Row 1: First Name and Last Name -->
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input 
+            type="text" 
+            id="firstName" 
+            name="firstName" 
+            placeholder="Enter First Name" 
+            required 
+            [(ngModel)]="user.firstName">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input 
+            type="text" 
+            id="lastName" 
+            name="lastName" 
+            placeholder="Enter Last Name" 
+            required 
+            [(ngModel)]="user.lastName">
+        </div>
+        
+        <!-- Row 2: Date of Birth and Phone Number -->
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input 
+            type="date" 
+            id="dob" 
+            name="dob" 
+            required 
+            [(ngModel)]="user.dob">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input 
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            placeholder="Enter Phone Number" 
+            required 
+            [(ngModel)]="user.phone">
+        </div>
+        
+        <!-- Row 3: Email and Class -->
+        <div class="form-group full-row">
+          <label for="email">Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Enter Email" 
+            required 
+            [(ngModel)]="user.email">
+        </div>
+        <div class="form-group full-row">
+          <label for="class">Class</label>
+          <input 
+            type="text" 
+            id="class" 
+            name="class" 
+            placeholder="Enter Class" 
+            required 
+            [(ngModel)]="user.class">
+        </div>
+      </div>
+      
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  

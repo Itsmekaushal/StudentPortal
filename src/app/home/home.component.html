@@ -1,0 +1,19 @@
+<div class="home-card">
+    <h1>Welcome to StudentPortal</h1>
+    <p>Your gateway to education and growth.</p>
+    
+    <div class="role-select">
+      <label for="role">Select Your Role:</label>
+      <select id="role" [(ngModel)]="selectedRole">
+        <option value="student">Student</option>
+        <option value="admin">Admin</option>
+      </select>
+    </div>
+    
+    <button (click)="onProceed()">Proceed</button>
+    
+    <p class="info-text">
+      For Admin: You'll be redirected to the Admin Login page. For Student: You'll register as a student.
+    </p>
+  </div>
+  

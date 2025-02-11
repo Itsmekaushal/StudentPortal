@@ -1,0 +1,31 @@
+<div class="edit-card">
+    <h2>Edit Information (Admin Only)</h2>
+    <form #editForm="ngForm" (ngSubmit)="onSubmit(editForm)">
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" [(ngModel)]="user.address" required placeholder="Enter Address">
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" [(ngModel)]="user.dob" required>
+      </div>
+      <div class="form-group">
+        <label for="class">Class</label>
+        <input type="text" id="class" name="class" [(ngModel)]="user.class" required placeholder="Enter Class">
+      </div>
+      <div class="form-group">
+        <label for="activities">Enrolled Activities</label>
+        <input type="text" id="activities" name="activities" [(ngModel)]="user.enrolledActivities" required placeholder="Enter Activities">
+      </div>
+      <div class="form-group">
+        <label for="courses">Enrolled Courses</label>
+        <input type="text" id="courses" name="courses" [(ngModel)]="user.enrolledCourses" required placeholder="Enter Courses">
+      </div>
+      <div class="form-group">
+        <label for="section">Section</label>
+        <input type="text" id="section" name="section" [(ngModel)]="user.section" required placeholder="Enter Section">
+      </div>
+      <button type="submit">Save Changes</button>
+    </form>
+  </div>
+  

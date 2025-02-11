@@ -1,0 +1,38 @@
+{
+    "users": [
+      {
+        "firstName": "Admin",
+        "lastName": "User",
+        "dob": "1985-01-01",
+        "phone": "9999999999",
+        "email": "admin@example.com",
+        "class": "",
+        "username": "admin0101",
+        "password": "Admin@123",
+        "role": "admin"
+      },
+      {
+        "firstName": "Amit",
+        "lastName": "Kumar",
+        "dob": "1990-08-15",
+        "phone": "9876543210",
+        "email": "amit.kumar@example.com",
+        "class": "10th",
+        "username": "amit1508",
+        "password": "Amit@1234",
+        "role": "student"
+      },
+      {
+        "firstName": "Priya",
+        "lastName": "Singh",
+        "dob": "1992-05-20",
+        "phone": "9123456780",
+        "email": "priya.singh@example.com",
+        "class": "12th",
+        "username": "priya2005",
+        "password": "Priya@1234",
+        "role": "student"
+      }
+    ]
+  }
+  

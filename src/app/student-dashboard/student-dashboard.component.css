@@ -1,0 +1,30 @@
+.dashboard-card {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .dashboard-card h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+  .dashboard-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  .dashboard-card li {
+    margin: 10px 0;
+  }
+  .dashboard-card a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+  }
+  .dashboard-card a:hover {
+    text-decoration: underline;
+  }
+  
