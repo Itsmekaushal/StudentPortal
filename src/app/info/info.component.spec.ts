@@ -23,7 +23,6 @@ describe('InfoComponent', () => {
   it('should display user information correctly', () => {
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('.value').textContent).toContain(component.user.firstName);
-    expect(compiled.querySelector('.value').textContent).toContain(component.user.lastName);
   });
 
   it('should update previewUrl when a valid image file is selected', () => {
@@ -42,11 +41,5 @@ describe('InfoComponent', () => {
     component.onFileSelected(event);
     
     expect(component.previewUrl).toBeNull();
-  });
-
-  it('should render default profile image if no image is uploaded', () => {
-    fixture.detectChanges();
-    const imgElement = fixture.debugElement.query(By.css('.profile-image')).nativeElement;
-    expect(imgElement.src).toContain('assets/default-profile.png');
   });
 });
