@@ -1,32 +1,38 @@
 <div class="info-card">
-    <h2>User Information</h2>
-    <div class="info-details">
-      <div class="info-item">
-        <span class="label">Name:</span>
-        <span class="value">{{ user.firstName }} {{ user.lastName }}</span>
-      </div>
-      <div class="info-item">
-        <span class="label">Date of Birth:</span>
-        <span class="value">{{ user.dob }}</span>
-      </div>
-      <div class="info-item">
-        <span class="label">Phone:</span>
-        <span class="value">{{ user.phone }}</span>
-      </div>
-      <div class="info-item">
-        <span class="label">Email:</span>
-        <span class="value">{{ user.email }}</span>
-      </div>
-      <div class="info-item">
-        <span class="label">Class:</span>
-        <span class="value">{{ user.class }}</span>
-      </div>
-      <div class="info-item">
-        <span class="label">Role:</span>
-        <span class="value">{{ user.role }}</span>
-      </div>
-    </div>
-    <button class="back-button" routerLink="/">Go Back</button>
+  <h2>User Information</h2>
+
+  <!-- Profile Image Upload -->
+  <div class="profile-image-container">
+    <img [src]="previewUrl || 'assets/default-profile.png'" alt="Profile Image" class="profile-image">
+    <input type="file" (change)="onFileSelected($event)" accept="image/png, image/jpeg, image/jpg">
   </div>
 
-  
+  <div class="info-details">
+    <div class="info-item">
+      <span class="label">Name:</span>
+      <span class="value">{{ user.firstName }} {{ user.lastName }}</span>
+    </div>
+    <div class="info-item">
+      <span class="label">Date of Birth:</span>
+      <span class="value">{{ user.dob }}</span>
+    </div>
+    <div class="info-item">
+      <span class="label">Phone:</span>
+      <span class="value">{{ user.phone }}</span>
+    </div>
+    <div class="info-item">
+      <span class="label">Email:</span>
+      <span class="value">{{ user.email }}</span>
+    </div>
+    <div class="info-item">
+      <span class="label">Class:</span>
+      <span class="value">{{ user.class }}</span>
+    </div>
+    <div class="info-item">
+      <span class="label">Role:</span>
+      <span class="value">{{ user.role }}</span>
+    </div>
+  </div>
+
+  <button class="back-button" routerLink="/">Go Back</button>
+</div>
