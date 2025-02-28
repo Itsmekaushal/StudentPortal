@@ -1,10 +1,11 @@
 <div class="info-card">
   <h2>User Information</h2>
 
-  <!-- Profile Image Upload -->
-  <div class="profile-image-container">
-    <img [src]="previewUrl || 'assets/default-profile.png'" alt="Profile Image" class="profile-image">
-    <input type="file" (change)="onFileSelected($event)" accept="image/png, image/jpeg, image/jpg">
+  <!-- Profile Image Section -->
+  <div class="profile-section">
+    <img [src]="previewUrl || 'assets/default-profile.png'" class="profile-image" alt="Profile Image">
+    <input type="file" (change)="onFileSelected($event)" id="fileInput" hidden>
+    <label for="fileInput" class="upload-btn">Upload Profile Image</label>
   </div>
 
   <div class="info-details">
