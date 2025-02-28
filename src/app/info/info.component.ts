@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-info',
@@ -20,19 +20,18 @@ export class InfoComponent {
     role: 'Student'
   };
 
-  previewUrl: string | ArrayBuffer | null = null;
+  previewUrl: string | null = null;
 
   onFileSelected(event: any) {
     const file = event.target.files[0];
-
     if (file && file.type.startsWith('image/')) {
       const reader = new FileReader();
-      reader.onload = () => {
-        this.previewUrl = reader.result;
+      reader.onload = (e: any) => {
+        this.previewUrl = e.target.result;
       };
       reader.readAsDataURL(file);
     } else {
-      alert('Please select a valid image file (JPG, JPEG, PNG)');
+      alert("Only image files are allowed!");
     }
   }
 }
