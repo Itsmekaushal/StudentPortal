@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-info',
+  standalone: true,
   templateUrl: './info.component.html',
   styleUrls: ['./info.component.css']
 })
@@ -27,7 +28,7 @@ export class InfoComponent {
     if (file && file.type.startsWith('image/')) {
       this.selectedFile = file;
 
-      // Image preview
+      // Image Preview
       const reader = new FileReader();
       reader.onload = (e: any) => {
         this.previewUrl = e.target.result;
@@ -47,7 +48,7 @@ export class InfoComponent {
 
     this.http.post<{ imageUrl: string }>('http://localhost:5000/api/upload', formData)
       .subscribe(response => {
-        this.previewUrl = response.imageUrl;
+        this.previewUrl = `http://localhost:5000${response.imageUrl}`;
       });
   }
 }
