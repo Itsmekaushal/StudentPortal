@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-info',
-  standalone: true,
   templateUrl: './info.component.html',
   styleUrls: ['./info.component.css']
 })
@@ -46,7 +45,7 @@ export class InfoComponent {
     const formData = new FormData();
     formData.append('profileImage', this.selectedFile);
 
-    this.http.post<{ imageUrl: string }>('http://localhost:5000/upload', formData)
+    this.http.post<{ imageUrl: string }>('http://localhost:5000/api/upload', formData)
       .subscribe(response => {
         this.previewUrl = response.imageUrl;
       });
